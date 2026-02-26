@@ -1,68 +1,51 @@
-\Availability Calculation
-To evaluate the reliability of the service, I calculated its availability using the standard formula:
-Availability = Number of Successful Responses / Total Number of Requests
-In this dataset, there were 51 successful responses (HTTP 200) out of a total of 120 requests made during the two-minute observation period.
-So the availability is calculated as:
-A
-v
-a
-i
-l
-a
-b
-i
-l
-i
-t
-y
-=
-51
-/
-120
-=
-0.425
-Availability=51/120=0.425
-This means the service had an availability of 42.5% during the test period. In other words, the server successfully responded to less than half of the requests, indicating that the service was not highly reliable at the time of measurement.
-
-
-
-
-
-
-
-
-
-
-nano hw-1/README.md# INF-3507 Homework 1
-
-## Implementation
-I wrote a Bash script that sends one request per second to the given endpoint for 2 minutes (120 requests total).  
-The script stores the timestamp and HTTP response code in a CSV file.
-
-## Analysis
-I analyzed the response codes in Excel using a Pivot Table to calculate frequency and percentage distribution.  
-I created two charts to visualize the results.
-
-## Availability
-Availability = Successful responses / Total requests
-
-Only 2xx responses were considered successful.
-
-## Video
-YouTube link: (to be added)
-
 # INF-3507 Homework 1
 
 ## Implementation
-The script invokes the unreliable banking endpoint once per second for 2 minutes and captures HTTP response codes in CSV format.
 
-## Availability
-Availability = Successful responses / Total requests
+For this assignment, I developed a Bash script that automatically sends one HTTP request per second to the provided endpoint for a total duration of two minutes (120 requests).
 
-(The final calculated value is shown in the video presentation.)
+For each request, the script records:
+- The timestamp in the required format (YYYY-MM-DD HH:MM:SS)
+- The HTTP response code
 
-## Video
-YouTube link: To be added after recording.
+All collected data is stored in a structured CSV file (`responses.csv`) for further analysis.
 
+---
 
+## Statistical Analysis
 
+After collecting the data, I imported the CSV file into Excel and created a Pivot Table to analyze the HTTP response codes.
+
+Using this analysis, I calculated:
+- The frequency (number of occurrences) of each HTTP status code
+- The percentage distribution of each HTTP status code
+
+To clearly present the results, I created two bar charts:
+1. Frequency distribution of HTTP response codes
+2. Percentage distribution of HTTP response codes
+
+These visualizations help demonstrate how often each type of response occurred during the observation period.
+
+---
+
+## Availability Calculation
+
+To evaluate the reliability of the service, I calculated its availability using the standard formula:
+
+Availability = Number of Successful Responses / Total Number of Requests
+
+Only HTTP 2xx responses (specifically HTTP 200) were considered successful.
+
+From the dataset:
+- Successful responses (HTTP 200): 51  
+- Total requests: 120  
+
+Availability = 51 / 120 = 0.425
+
+This means the service had an availability of **42.5%** during the two-minute test period. In other words, the server successfully responded to less than half of the requests, indicating that the service was not highly reliable at the time of measurement.
+
+---
+
+## Video Presentation
+
+YouTube link: (to be added after recording)
