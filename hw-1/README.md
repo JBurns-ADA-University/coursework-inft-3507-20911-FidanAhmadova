@@ -1,4 +1,4 @@
-# INF-3507 Homework 1
+# INFT-3507 Homework 1
 
 ## Implementation
 
