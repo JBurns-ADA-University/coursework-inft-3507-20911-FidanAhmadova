@@ -1,6 +1,5 @@
 # INFT-3507 Homework 1
 ## Service Monitoring and Availability Analysis
-=---
 ## 1. Implementation
 For this assignment, I implemented an automated monitoring solution using a Bash script. The objective was to simulate real-world service monitoring by invoking the provided web endpoint approximately once per second over a fixed time interval of two minutes.
 
